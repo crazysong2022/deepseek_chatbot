@@ -251,15 +251,13 @@ def ask_question():
             print("Goodbye!")
             break
 
-        # Add the role description as the first message in the conversation history for every question
-        # This ensures the AI always has the role context
+        # Construct the messages list with:
+        # 1. Role description (system message)
+        # 2. Previous conversation history (for context)
+        # 3. Current question (user message)
         messages = [{"role": "system", "content": role_description}]
-
-        # Add the previous conversation history
-        messages.extend(conversation_history)
-
-        # Add the user's question to the conversation history with the 'user' role
-        messages.append({"role": "user", "content": question})
+        messages.extend(conversation_history)  # Include previous history for context
+        messages.append({"role": "user", "content": question})  # Add current question
 
         try:
             print("\nResponse:")
@@ -278,10 +276,10 @@ def ask_question():
 
             print("\n")
 
-            # Add only the user's question to the conversation history (ignore assistant's response)
+            # Add the user's question to the conversation history
             conversation_history.append({"role": "user", "content": question})
 
-            # Save conversation history for this user (only user questions)
+            # Save conversation history for this user
             save_conversation_history(current_user)
             save_current_user()  # Ensure current user is saved
 

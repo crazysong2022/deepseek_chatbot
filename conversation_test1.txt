@@ -1,94 +1,10 @@
 user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: who are you?
-user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: who are you?
+user: explain to me the disease gout
+user: what symptoms it has?
+user: any medication?
 user: explain to me heart diseases
-user: who are you?
-user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: who are you?
-user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: ÄãÊÇË­
-user: who are you
-user: who are you?
-user: who are you?
-user: who are you?
-user: who are you?
-user: explain to me heart diseases
-user: who are you?
-user: explain to me the drugs that cure the heart diseases
-user: who are you?
+user: any medications?
+user: any medications?
+user: any medications?
+user: explain to me brain surgery
+user: any medications?
