@@ -1,22 +1,24 @@
-# Use a more recent base image
-FROM ubuntu:22.04
+# Use a Python base image with Tkinter pre-installed
+FROM python:3.12
 
 # Set the working directory
 WORKDIR /app
 
-# Install necessary packages
+# Install Tcl/Tk and other necessary dependencies
 RUN apt-get update && apt-get install -y \
-    curl \
-    wget \
     tcl \
-    tk
+    tk \
+    python3-tk
 
-# Copy the application files
-COPY . /app/
+# Copy the requirements file and install Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Install Python dependencies
-RUN python -m venv /opt/venv && \
-    . /opt/venv/bin/activate && \
-    pip install -r requirements.txt
+# Copy the application code
+COPY . .
 
-# Continue with the rest of your Dockerfile...
+# Expose the application port (if needed)
+EXPOSE 5000
+
+# Set the command to run the application
+CMD ["python", "deepseek_gui_chatbot.py"]
