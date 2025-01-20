@@ -4,3 +4,4 @@ test3:www@qas.com:$2b$12$IDjhIXNIGf7OMAx2YiflEOB2g14TECf0z3b2/hhlXOhw7I6mx2Mta
 test4:www@qqq.com:$2b$12$emQTRd4/WDfTwCnV.upos.DRnk/hm6AR/Gd5BU3zEbLfBqFW8CpO6
 test5:sss@ddd.com:$2b$12$9I1iD8HOS.KhV3DEXU7CXeCGTwFy9Ulk10GIvO7owrgvHxD9QT2Zy
 test6:333@333.com:$2b$12$nH5QNZuP1VCtxDa33UK5ourDOG2KcqtleB5bIm59kY3LI.3QxcvS.
+chris:test@test.com:$2b$12$2uNctloCuq/KRmWrlAiK.u0HqbVS4ukKtvQrrgCNbw4VSx1qnVb7m
