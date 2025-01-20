@@ -1,0 +1,15 @@
+# Handle line endings automatically
+* text=auto
+
+# Explicitly specify line endings for specific file types
+*.txt text
+*.py text
+*.md text
+
+# Mark binary files to prevent line ending changes
+*.png binary
+*.jpg binary
+*.jar binary
+
+# Exclude specific files or directories
+/venv/ export-ignore
