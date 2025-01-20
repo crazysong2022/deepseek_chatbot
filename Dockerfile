@@ -1,31 +1,22 @@
-FROM ghcr.io/railwayapp/nixpacks:ubuntu-1727136237
-
-# Install GLIBC and Tcl/Tk
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    wget \
-    && wget http://ftp.gnu.org/gnu/glibc/glibc-2.38.tar.gz \
-    && tar -xzf glibc-2.38.tar.gz \
-    && cd glibc-2.38 \
-    && mkdir build \
-    && cd build \
-    && ../configure --prefix=/usr \
-    && make -j$(nproc) \
-    && make install \
-    && apt-get install -y tcl tk \
-    && rm -rf /var/lib/apt/lists/*
+# Use a more recent base image
+FROM ubuntu:22.04
 
 # Set the working directory
 WORKDIR /app
 
-# Copy the requirements file
-COPY requirements.txt .
+# Install necessary packages
+RUN apt-get update && apt-get install -y \
+    curl \
+    wget \
+    tcl \
+    tk
+
+# Copy the application files
+COPY . /app/
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN python -m venv /opt/venv && \
+    . /opt/venv/bin/activate && \
+    pip install -r requirements.txt
 
-# Copy the rest of the application code
-COPY . .
-
-# Run the application
-CMD ["python", "deepseek_gui_chatbot.py"]
+# Continue with the rest of your Dockerfile...
